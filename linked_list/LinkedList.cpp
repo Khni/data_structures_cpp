@@ -15,3 +15,10 @@ bool LinkedList<DataType>::isEmpty()
 
     return (head == NULL);
 }
+
+// template <class DataType>
+// void LinkedList<DataType>::insertFirst(DataType data){
+//    if(isEmpty()){
+
+//    }
+// }

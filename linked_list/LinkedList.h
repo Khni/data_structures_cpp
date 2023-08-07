@@ -17,7 +17,8 @@ class LinkedList
 public:
     LinkedList();
     void display();
-    void insertFirst();
+    void advance();
+    void insertFirst(DataType);
     bool isEmpty();
 };
 
