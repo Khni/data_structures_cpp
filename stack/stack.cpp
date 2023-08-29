@@ -3,7 +3,7 @@
 using namespace std;
 
 template <class DataType>
-Stack<DataType>::Stack(int size = 128)
+Stack<DataType>::Stack(int size)
 {
     maxSize = size;
     stk = new DataType[maxSize];
@@ -15,7 +15,7 @@ template <class DataType>
 void Stack<DataType>::push(DataType data)
 
 {
-    if (!stackIsFull)
+    if (!stackIsFull())
     {
         top++;
         count++;
@@ -43,8 +43,9 @@ void Stack<DataType>::display()
 {
     // check if stack is not empty
 
-    if (!stackIsEmpty)
+    if (!stackIsEmpty())
     {
+        cout << "stack is not empty";
         for (int x = 0; x <= count; x++)
         {
             cout << stk[x];

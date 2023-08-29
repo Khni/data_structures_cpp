@@ -1,3 +1,5 @@
+#include <iostream>
+
 using namespace std;
 #ifndef STACK_H
 #define STACK_H
@@ -5,7 +7,7 @@ template <class DataType>
 class Stack
 {
     DataType *stk;
-    int Top, count, maxSize;
+    int top, count, maxSize;
 
 public:
     Stack(int);
@@ -18,4 +20,4 @@ public:
     DataType stackTop();
 };
 
-#endif STACK_H
+#endif // STACK_H
