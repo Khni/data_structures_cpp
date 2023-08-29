@@ -1,15 +1,21 @@
-
+using namespace std;
+#ifndef STACK_H
+#define STACK_H
 template <class DataType>
 class Stack
 {
     DataType *stk;
-    int Top;
-    int count;
+    int Top, count, maxSize;
 
 public:
     Stack(int);
     void push(DataType);
-    void pop();
+    void pop(DataType &);
+    void display();
+    bool stackIsFull();
+    bool stackIsEmpty();
 
-    DataType top();
+    DataType stackTop();
 };
+
+#endif STACK_H
